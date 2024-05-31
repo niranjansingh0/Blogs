@@ -73,7 +73,9 @@ typings/
 
 # Serverless directories
 .serverless/
+node_modules
 
+app.js
 # FuseBox cache
 .fusebox/
 
