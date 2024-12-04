@@ -19,10 +19,15 @@ app.use(express.static("public"));
 main().catch(err => console.log(err));
 
 async function main() {
-
-  await mongoose.connect(process.env.URL);
-  
-  
+  try {
+    await mongoose.connect(process.env.URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('MongoDB connected successfully');
+  } catch (error) {
+    console.error('MongoDB connection error:', error);
+  }
 }
 
 const postSchema = {
