@@ -24,7 +24,7 @@
 | **Database**  | MongoDB with Mongoose *(optional)* |
 
 ---
-##📸 Screenshots
+## 📸 Screenshots
 
 ![Login Page](./Login.png)
 ![Compose Page](./compose.png)
